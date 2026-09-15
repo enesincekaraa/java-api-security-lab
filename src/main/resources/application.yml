@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: lab-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:15436/security_lab
+    username: lab_user
+    password: lab_password
+
+server:
+  address: 127.0.0.1
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
